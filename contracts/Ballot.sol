@@ -24,23 +24,25 @@ contract Ballot {
         voters[chairPerson].voted = false;
     }
 
+    function getChairPerson(uint id) public view returns (address){
+        return chairPerson;
+    }
+
     function register(address toVoter) public onlyOwner {
-        if (voters[toVoter].registered) revert();
+        require(voters[toVoter].registered, "Already registered");
         voters[toVoter].voted = false;
         voters[toVoter].registered = true;
     }
 
     function vote(uint toProposal) public {
         Voter storage sender = voters[msg.sender];
-        if (sender.voted || toProposal >= 35 || !sender.registered) {
-            revert();
-        }
+        require(!(sender.voted || toProposal >= 35 || !sender.registered), "Requirements are not satisfied to vote");
         sender.voted = true;
         sender.vote = toProposal;
         voteCount[toProposal] += 1;
     }
 
-    function winningProposal() public view returns (uint256 _winningProposal) {
+    function winningProposal(uint id) public view returns (uint256 _winningProposal) {
         uint winningVoteCount = 0;
         for (uint256 index = 0; index < 35; index++) {
             if (voteCount[index] > winningVoteCount) {
@@ -50,7 +52,7 @@ contract Ballot {
         }
     }
 
-    function getVoteCount() public view returns (uint[35] memory) {
+    function getVoteCount(uint id) public view returns (uint[35] memory) {
         return voteCount;
     }
 }
