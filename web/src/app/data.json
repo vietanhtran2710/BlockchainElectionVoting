@@ -10,7 +10,7 @@
         "president": "Donal Trump",
         "vicePresident": "Mike Dence",
         "party": "Republican Party",
-        "presidentImage": "../assets/Kamala_Harris.jpg",
+        "presidentImage": "../assets/Donald_Trump.jpg",
         "vicePresidentImage": "../assets/Mike_Pence.jpg"
     },
     {
@@ -108,7 +108,7 @@
         "president": "Phil Collins",
         "vicePresident": "Billy Joe Parker",
         "party": "Prohibition Party",
-        "presidentImage": "../assets/Pill_Collins.jpg",
+        "presidentImage": "../assets/Phil_Collins.jpg",
         "vicePresidentImage": "../assets/unknown.png"
     },
     {
@@ -122,15 +122,15 @@
         "president": "President Boddie",
         "vicePresident": "Eric Stoneham",
         "party": "C.U.P",
-        "presidentImage": "../assets/unknown.jpg",
-        "vicePresidentImage": "../assets/unknown.jpg"
+        "presidentImage": "../assets/unknown.png",
+        "vicePresidentImage": "../assets/unknown.png"
     },
     {
         "president": "Joe McHugh",
         "vicePresident": "Elizabeth Storm",
         "party": "Independent",
-        "presidentImage": "../assets/Joe_McHugh",
-        "vicePresidentImage": "../assets/unknown.jpg"
+        "presidentImage": "../assets/Joe_McHugh.png",
+        "vicePresidentImage": "../assets/unknown.png"
     },
     {
         "president": "Mark Charles",
@@ -143,7 +143,7 @@
         "president": "Sheila Tittle",
         "vicePresident": "",
         "party": "Independent",
-        "presidentImage": "../assets/Sheila_Tittle.jpg",
+        "presidentImage": "../assets/Samm_Tittle.png",
         "vicePresidentImage": ""
     },
     {
@@ -151,7 +151,7 @@
         "vicePresident": "Phil Collins",
         "party": "Independent",
         "presidentImage": "../assets/Connie_Gammon.jpg",
-        "vicePresidentImage": "../assets/Phil_Colins.jpg"
+        "vicePresidentImage": "../assets/Phil_Collins.jpg"
     },
     {
         "president": "J.R. Myers",
@@ -178,7 +178,7 @@
         "president": "Christopher Lafontaine",
         "vicePresident": "Michael Speed",
         "party": "Independent",
-        "presidentImage": "../assets/Christopher_Lafontaine.jpg",
+        "presidentImage": "../assets/Christopher_LaFontaine.png",
         "vicePresidentImage": "../assets/Michael_Speed.jpg"
     },
     {
@@ -192,7 +192,7 @@
         "president": "Ricki Sue King",
         "vicePresident": "Dayna Chandler",
         "party": "Genealogy Know Your Family History Party",
-        "presidentImage": "../assets/",
+        "presidentImage": "../assets/Ricki_Sue_King.png",
         "vicePresidentImage": "../assets/unknown.png"
     },
     {
@@ -241,7 +241,7 @@
         "president": "Keith McCormic",
         "vicePresident": "Sam Blasiak",
         "party": "Bull Moose",
-        "presidentImage": "../assets/Keith_McCormic",
+        "presidentImage": "../assets/unknown.png",
         "vicePresidentImage": "../assets/unknown.png"
     },
     {
