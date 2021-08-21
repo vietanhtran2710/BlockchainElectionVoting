@@ -69,7 +69,7 @@ contract('Ballot Contract', function (accounts) {
 
     //Test case 4
     it("Validate winner", function () {
-        return ballotInstance.winningProposal.call()
+        return ballotInstance.winningProposal.call(0)
         .then(function (result) {
             assert.equal(_voting.winner, result.toNumber(), 
                 'Winner is validated with the expected winner');
@@ -78,7 +78,7 @@ contract('Ballot Contract', function (accounts) {
 
     //Test case 5
     it("Valid individual votes", function () {
-        return ballotInstance.getVoteCount.call().then(function (result) {
+        return ballotInstance.getVoteCount.call(0).then(function (result) {
             assert.equal(2, result[0].toNumber(), 'Individual vote is validated with expected vote count');
             assert.equal(1, result[1].toNumber(), 'Individual vote is validated with expected vote count');
             assert.equal(1, result[2].toNumber(), 'Individual vote is validated with expected vote count');
@@ -116,7 +116,7 @@ contract('Ballot Contract', function (accounts) {
         it("Should NOT accept unregistered user vote", function () {
         return ballotInstance.vote(1, {from: accounts[7]})
             .then(function (result) {
-                    throw("Condition not implemented in Smart Contract");
+                throw("Condition not implemented in Smart Contract");
             }).catch(function (e) {
                 if(e === "Condition not implemented in Smart Contract") {
                     assert(false);

@@ -29,7 +29,7 @@ contract Ballot {
     }
 
     function register(address toVoter) public onlyOwner {
-        require(voters[toVoter].registered, "Already registered");
+        require(!voters[toVoter].registered, "Already registered");
         voters[toVoter].voted = false;
         voters[toVoter].registered = true;
     }
