@@ -1,0 +1,254 @@
+[
+    {
+        "president": "Joe Biden",
+        "vicePresident": "Kamala D. Harris",
+        "party": "Democratic Party",
+        "presidentImage": "../assets/Joe_Biden.jpg",
+        "vicePresidentImage": "../assets/Kamala_Harris.jpg"
+    },
+    {
+        "president": "Donal Trump",
+        "vicePresident": "Mike Dence",
+        "party": "Republican Party",
+        "presidentImage": "../assets/Kamala_Harris.jpg",
+        "vicePresidentImage": "../assets/Mike_Pence.jpg"
+    },
+    {
+        "president": "Jo Jorgensen",
+        "vicePresident": "Spike Cohen",
+        "party": "Libertarian Party",
+        "presidentImage": "../assets/Jo_Jorgensen.jpg",
+        "vicePresidentImage": "../assets/Spike_Cohen.jpg"
+    },
+    {
+        "president": "Howie Hawkins",
+        "vicePresident": "Angela Nicole Walker",
+        "party": "Green Party",
+        "presidentImage": "../assets/Howie_Hawkins.jpg",
+        "vicePresidentImage": "../assets/Angela_Nicole_Walker.jpg"
+    },
+    {
+        "president": "Roque De La Fuente",
+        "vicePresident": "",
+        "party": "The Alliance Party",
+        "presidentImage": "../assets/Roque_De_La_Fuente.jpg",
+        "vicePresidentImage": ""
+    },
+    {
+        "president": "Gloria La Riva",
+        "vicePresident": "",
+        "party": "Party for Socialism and Liberation",
+        "presidentImage": "../assets/Gloria_La_Riva.jpg",
+        "vicePresidentImage": ""
+    },
+    {
+        "president": "Kanye West",
+        "vicePresident": "Michelle Tidball",
+        "party": "Independent",
+        "presidentImage": "../assets/Kanye_West.jpg",
+        "vicePresidentImage": "../assets/Michelle_Tidball.png"
+    },
+    {
+        "president": "Don Blankenship",
+        "vicePresident": "William Mohr",
+        "party": "Constitution Party",
+        "presidentImage": "../assets/Don_Blankenship.jpg",
+        "vicePresidentImage": "../assets/William_Mohr.jpg"
+    },
+    {
+        "president": "Brock Pierce",
+        "vicePresident": "Karla Ballard",
+        "party": "Independent",
+        "presidentImage": "../assets/Brock_Pierce.jpg",
+        "vicePresidentImage": "../assets/Karla_Ballard.jpg"
+    },
+    {
+        "president": "Brian T. Carroll",
+        "vicePresident": "Amar Patel",
+        "party": "American Solidarity Party",
+        "presidentImage": "../assets/Brian_T._Carroll.jpg",
+        "vicePresidentImage": "../assets/Amar_Patel.jpg"
+    },
+    {
+        "president": "Alyson Kennedy",
+        "vicePresident": "Malcolm Jarrett",
+        "party": "Socialist Workers Party",
+        "presidentImage": "../assets/Alyson_Kennedy.jpg",
+        "vicePresidentImage": "../assets/Malcolm_Jarrett.jpg"
+    },
+    {
+        "president": "Bill Hammons",
+        "vicePresident": "Eric Bodenstab",
+        "party": "Unity Party",
+        "presidentImage": "../assets/Bill_Hammons.jpg",
+        "vicePresidentImage": "../assets/Eric_Bodenstab.jpg"
+    },
+    {
+        "president": "Jade Simmons",
+        "vicePresident": "",
+        "party": "Independent",
+        "presidentImage": "../assets/Jade_Simmons.jpg",
+        "vicePresidentImage": ""
+    },
+    {
+        "president": "Jerry Segal",
+        "vicePresident": "John de Graaf",
+        "party": "Bread and Roses",
+        "presidentImage": "../assets/Jerry_Segal.jpg",
+        "vicePresidentImage": "../assets/unknown.png"
+    },
+    {
+        "president": "Dario David Hunter",
+        "vicePresident": "Dawn Neptune Adams",
+        "party": "Progressive Party",
+        "presidentImage": "../assets/Dario_David_Hunter.jpg",
+        "vicePresidentImage": "../assets/Dawn_Adams.jpg"
+    },
+    {
+        "president": "Phil Collins",
+        "vicePresident": "Billy Joe Parker",
+        "party": "Prohibition Party",
+        "presidentImage": "../assets/Pill_Collins.jpg",
+        "vicePresidentImage": "../assets/unknown.png"
+    },
+    {
+        "president": "Jesse Ventura",
+        "vicePresident": "Cynthia McKinney",
+        "party": "Green Party of Alaska",
+        "presidentImage": "../assets/Jesse_Ventura.jpg",
+        "vicePresidentImage": "../assets/Cynthia_McKinney.jpg"
+    },
+    {
+        "president": "President Boddie",
+        "vicePresident": "Eric Stoneham",
+        "party": "C.U.P",
+        "presidentImage": "../assets/unknown.jpg",
+        "vicePresidentImage": "../assets/unknown.jpg"
+    },
+    {
+        "president": "Joe McHugh",
+        "vicePresident": "Elizabeth Storm",
+        "party": "Independent",
+        "presidentImage": "../assets/Joe_McHugh",
+        "vicePresidentImage": "../assets/unknown.jpg"
+    },
+    {
+        "president": "Mark Charles",
+        "vicePresident": "Adrian Wallace",
+        "party": "Independent",
+        "presidentImage": "../assets/Mark_Charles.jpg",
+        "vicePresidentImage": "../assets/Adrian_Wallace.jpg"
+    },
+    {
+        "president": "Sheila Tittle",
+        "vicePresident": "",
+        "party": "Independent",
+        "presidentImage": "../assets/Sheila_Tittle.jpg",
+        "vicePresidentImage": ""
+    },
+    {
+        "president": "Connie Gammon",
+        "vicePresident": "Phil Collins",
+        "party": "Independent",
+        "presidentImage": "../assets/Connie_Gammon.jpg",
+        "vicePresidentImage": "../assets/Phil_Colins.jpg"
+    },
+    {
+        "president": "J.R. Myers",
+        "vicePresident": "Tiara Lusk",
+        "party": "Life and Liberty",
+        "presidentImage": "../assets/J.R._Myers.jpg",
+        "vicePresidentImage": "../assets/unknown.png"
+    },
+    {
+        "president": "Tom Hoefling",
+        "vicePresident": "Andy Prior",
+        "party": "Independent",
+        "presidentImage": "../assets/Tom_Hoefling.jpg",
+        "vicePresidentImage": "../assets/Andy_Prior.jpg"
+    },
+    {
+        "president": "H. Brooke Paige",
+        "vicePresident": "Thomas Witman",
+        "party": "Grumpy Old Patriots",
+        "presidentImage": "../assets/Brooke_Paige.jpg",
+        "vicePresidentImage": "../assets/unknown.png"
+    },
+    {
+        "president": "Christopher Lafontaine",
+        "vicePresident": "Michael Speed",
+        "party": "Independent",
+        "presidentImage": "../assets/Christopher_Lafontaine.jpg",
+        "vicePresidentImage": "../assets/Michael_Speed.jpg"
+    },
+    {
+        "president": "Kyle Kenley Kopitke",
+        "vicePresident": "",
+        "party": "Independent",
+        "presidentImage": "../assets/Kyle_Kenley_Kopitke.jpg",
+        "vicePresidentImage": ""
+    },
+    {
+        "president": "Ricki Sue King",
+        "vicePresident": "Dayna Chandler",
+        "party": "Genealogy Know Your Family History Party",
+        "presidentImage": "../assets/",
+        "vicePresidentImage": "../assets/unknown.png"
+    },
+    {
+        "president": "Princess Khadijah M. Pres Jacob-Fambro",
+        "vicePresident": "Khadijah Maryam Jacob Sr.",
+        "party": "Independent",
+        "presidentImage": "../assets/Princess_Khadijah_M._Pres_Jacob-Fambro.jpg",
+        "vicePresidentImage": "../assets/Khadijah_Maryam_Jacob_Sr..jpg"
+    },
+    {
+        "president": "Blake Huber",
+        "vicePresident": "Frank Atwood",
+        "party": "Approval Voting Party",
+        "presidentImage": "../assets/Blake_Huber.jpg",
+        "vicePresidentImage": "../assets/Frank_Atwood.jpg"
+    },
+    {
+        "president": "Joseph Kishore",
+        "vicePresident": "Norissa Santa Cruz",
+        "party": "Socialist Equality Party",
+        "presidentImage": "../assets/Joseph_Kishore.jpg",
+        "vicePresidentImage": "../assets/unknown.png"
+    },
+    {
+        "president": "Richard Duncan",
+        "vicePresident": "Mitch Bupp",
+        "party": "Independent",
+        "presidentImage": "../assets/Richard_Duncan.jpg",
+        "vicePresidentImage": "../assets/unknown.png"
+    },
+    {
+        "president": "Jordan Marc Scott",
+        "vicePresident": "Jennifer Tepool",
+        "party": "Independent",
+        "presidentImage": "../assets/unknown.png",
+        "vicePresidentImage": "../assets/unknown.png"
+    },
+    {
+        "president": "Gary Swing",
+        "vicePresident": "David Olszta",
+        "party": "Boiling Frog",
+        "presidentImage": "../assets/Gary_Swing.jpg",
+        "vicePresidentImage": "../assets/David_R._Olszta.jpg"
+    },
+    {
+        "president": "Keith McCormic",
+        "vicePresident": "Sam Blasiak",
+        "party": "Bull Moose",
+        "presidentImage": "../assets/Keith_McCormic",
+        "vicePresidentImage": "../assets/unknown.png"
+    },
+    {
+        "president": "Zachary Scalf",
+        "vicePresident": "Matthew Lyda",
+        "party": "Independent",
+        "presidentImage": "../assets/Zachary_Scalf.jpg",
+        "vicePresidentImage": "../assets/unknown.png"
+    }
+]

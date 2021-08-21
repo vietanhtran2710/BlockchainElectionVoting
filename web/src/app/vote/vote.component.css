@@ -1,3 +1,8 @@
+.page{
+    background: url("./../../assets/background.jpg") fixed repeat;
+    background-size: cover;
+}
+
 body{
     background-color: #f8f9fa!important
 }
@@ -11,7 +16,9 @@ body{
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
 }
     
-/* user-dashboard-info-box */
+.user-dashboard-info-box {
+    border-radius: 25px;
+}
 .user-dashboard-info-box .candidates-list .thumb {
     margin-right: 20px;
 }
