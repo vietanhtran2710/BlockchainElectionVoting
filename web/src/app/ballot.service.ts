@@ -84,15 +84,10 @@ export class BallotService {
 
   getChairman(currentAccount) {
     const that = this;
-    console.log('account: ', that.account);
     return new Promise((resolve, reject) => {
-      console.log('transfer.service :: transferEther :: tokenAbi');
-      console.log(tokenAbi);
       const contract = require('@truffle/contract');
       const ballotContract = contract(tokenAbi);
       ballotContract.setProvider(that.web3);
-      console.log('transfer.service :: transferEther :: transferContract');
-      console.log(ballotContract);
       ballotContract.deployed().then(function(instance) {
         return instance.getChairPerson(
           0,
@@ -101,6 +96,29 @@ export class BallotService {
       }).then(function(result) {
         console.log(result);
         return resolve(result);
+      }).catch(function(error) {
+        alert("Transaction reverted");
+        console.log(error);
+        return reject('transfer.service error');
+      });
+    });
+  }
+
+  register(address, currentAccount) {
+    const that = this;
+    return new Promise((resolve, reject) => {
+      const contract = require('@truffle/contract');
+      const ballotContract = contract(tokenAbi);
+      ballotContract.setProvider(that.web3);
+      ballotContract.deployed().then(function(instance) {
+        return instance.register(
+          address,
+          {from: currentAccount}
+        );
+      }).then(function(result) {
+        console.log(result);
+        if (result.receipt.status)
+          return resolve({status: true});
       }).catch(function(error) {
         alert("Transaction reverted");
         console.log(error);

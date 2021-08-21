@@ -8,10 +8,11 @@
             <div class="cross-validation">
                 <label for="name"><b>ACCOUNT ADDRESS</b></label>
 
-                <input class="input100 form-control" id="name" name="username" type="text" formControlName="username">
+                <input class="input100 form-control" id="address" name="address" type="text"
+                [(ngModel)]="formData.address" #address="ngModel">
 
             </div>
-            <button class="btn pink" type="submit">REGISTER</button>
+            <button class="btn pink" type="submit" (click)="register()">REGISTER</button>
 
         </form>
 

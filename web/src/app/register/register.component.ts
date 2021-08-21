@@ -15,6 +15,9 @@ export class RegisterComponent implements OnInit {
   currentAccount
   chairmanAddress
   isChairman = false;
+  formData = {
+    address: ''
+  }
 
   async ngOnInit(): Promise<void> {
     this.currentAccount = await this.ballotService.getAccount().then(function(result) {
@@ -29,6 +32,16 @@ export class RegisterComponent implements OnInit {
       this.router.navigate([``])
     }
     else this.isChairman = true;
+  }
+
+  register() {
+    console.log("clicked");
+    this.ballotService.register(this.formData.address, this.currentAccount)
+    .then(function(result) {
+      if ((result as any).status) {
+        console.log("registered sucessfully");
+      }
+    })
   }
 
 }
