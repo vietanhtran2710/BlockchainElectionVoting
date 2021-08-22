@@ -1,4 +1,4 @@
-<div style="display: block">
+<div *ngIf="resultLoaded" style="display: block">
     <canvas mdbChart
         [chartType]="chartType"
         [datasets]="chartDatasets"

@@ -14,7 +14,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let item of _data" class="candidates-list">
+              <tr *ngFor="let item of _data; let i = index" class="candidates-list">
                 <td class="title">
                   <div class="thumb">
                     <img class="img-fluid" src="{{item.presidentImage}}" alt="">
@@ -35,7 +35,7 @@
                 </td>
                 <td>
                   <ul class="list-unstyled mb-0 d-flex justify-content-end">
-                    <button type="button" class="btn btn-primary btn-lg">VOTE</button>
+                    <button type="button" (click)="vote(i)" class="btn btn-primary btn-lg">VOTE</button>
                   </ul>
                 </td>
               </tr>

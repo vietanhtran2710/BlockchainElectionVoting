@@ -126,4 +126,48 @@ export class BallotService {
       });
     });
   }
+
+  getVoteResult(currentAccount) {
+    const that = this;
+    return new Promise((resolve, reject) => {
+      const contract = require('@truffle/contract');
+      const ballotContract = contract(tokenAbi);
+      ballotContract.setProvider(that.web3);
+      ballotContract.deployed().then(function(instance) {
+        return instance.getVoteCount(
+          0,
+          {from: currentAccount}
+        );
+      }).then(function(result) {
+          return resolve(result);
+      }).catch(function(error) {
+        alert("Transaction reverted");
+        console.log(error);
+        return reject('transfer.service error');
+      });
+    });
+  }
+
+  vote(index, currentAccount) {
+    const that = this;
+    return new Promise((resolve, reject) => {
+      const contract = require('@truffle/contract');
+      const ballotContract = contract(tokenAbi);
+      ballotContract.setProvider(that.web3);
+      ballotContract.deployed().then(function(instance) {
+        return instance.vote(
+          index,
+          {from: currentAccount}
+        );
+      }).then(function(result) {
+          console.log(result);
+          if (result.receipt.status)
+            return resolve({status: true});
+      }).catch(function(error) {
+        alert("Transaction reverted");
+        console.log(error);
+        return reject('transfer.service error');
+      });
+    });
+  }
 }

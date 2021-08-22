@@ -25,4 +25,13 @@ export class VoteComponent implements OnInit {
     console.log("Current account: ",this.currentAccount);
   }
 
+  async vote(index) {
+    const that = this;
+    this.currentAccount = await this.ballotService.vote(index, this.currentAccount)
+    .then(function(result) {
+      alert("Voted");
+      that.router.navigate([``])
+    });
+  }
+
 }
