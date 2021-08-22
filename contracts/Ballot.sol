@@ -9,7 +9,7 @@ contract Ballot {
         bool registered;
     }
 
-    uint[35] public voteCount;
+    uint[36] public voteCount;
     address public chairPerson;
     mapping(address => Voter) voters;
 
@@ -36,7 +36,7 @@ contract Ballot {
 
     function vote(uint toProposal) public {
         Voter storage sender = voters[msg.sender];
-        require(!(sender.voted || toProposal >= 35 || !sender.registered), "Requirements are not satisfied to vote");
+        require(!(sender.voted || toProposal >= 36 || !sender.registered), "Requirements are not satisfied to vote");
         sender.voted = true;
         sender.vote = toProposal;
         voteCount[toProposal] += 1;
@@ -52,7 +52,7 @@ contract Ballot {
         }
     }
 
-    function getVoteCount(uint id) public view returns (uint[35] memory) {
+    function getVoteCount(uint id) public view returns (uint[36] memory) {
         return voteCount;
     }
 }
