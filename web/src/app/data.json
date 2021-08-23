@@ -8,7 +8,7 @@
     },
     {
         "president": "Donal Trump",
-        "vicePresident": "Mike Dence",
+        "vicePresident": "Mike Pence",
         "party": "Republican Party",
         "presidentImage": "../assets/Donald_Trump.jpg",
         "vicePresidentImage": "../assets/Mike_Pence.jpg"
