@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BallotService } from '../ballot.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import data from '../data.json';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-vote',
@@ -26,12 +27,29 @@ export class VoteComponent implements OnInit {
   }
 
   async vote(index) {
-    const that = this;
-    this.currentAccount = await this.ballotService.vote(index, this.currentAccount)
-    .then(function(result) {
-      alert("Voted");
-      that.router.navigate([``])
-    });
+    Swal.fire({
+      title: 'Confirm register',
+      text: "Are you sure you want to vote for\n" + this._data[index].president + "/" + this._data[index].vicePresident + "?",
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Confirm'
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        const that = this;
+        this.currentAccount = await this.ballotService.vote(index, this.currentAccount)
+        .then(function(result) {
+          Swal.fire(
+            'Success!',
+            'You voted successfully!',
+            'success'
+          )
+          that.router.navigate([``])
+        });
+      }
+    })
+    
   }
 
 }

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +23,7 @@ import { ResultComponent } from './result/result.component';
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
+    SweetAlert2Module.forRoot(),
     FormsModule
   ],
   providers: [],
