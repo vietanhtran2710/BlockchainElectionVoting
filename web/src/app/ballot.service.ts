@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import Swal from 'sweetalert2';
 import Web3 from 'web3'
 
 declare let require: any;
@@ -15,7 +16,12 @@ export class BallotService {
 
   constructor() { 
     if (window.ethereum === undefined) {
-      alert('Non-Ethereum browser detected. Install MetaMask');
+      Swal.fire({
+        icon: 'error',
+        title: 'Non-ethereum browser detected',
+        text: 'Install Metamask',
+        footer: '<a href="">Why do I have this issue?</a>'
+      })
     } else {
       if (typeof window.web3 !== 'undefined') {
         this.web3 = window.web3.currentProvider;
@@ -51,11 +57,21 @@ export class BallotService {
             this.account = retAccount[0];
             resolve(this.account);
           } else {
-            alert('transfer.service :: getAccount :: no accounts found.');
+            Swal.fire({
+              icon: 'error',
+              title: 'No account found',
+              text: 'Try to connect to Metamask first',
+              footer: '<a href="">Why do I have this issue?</a>'
+            })
             reject('No accounts found.');
           }
           if (err != null) {
-            alert('transfer.service :: getAccount :: error retrieving account');
+            Swal.fire({
+              icon: 'error',
+              title: 'Error retriving account',
+              text: 'Please try again later',
+              footer: '<a href="">Why do I have this issue?</a>'
+            })
             reject('Error retrieving account');
           }
         });
@@ -120,7 +136,12 @@ export class BallotService {
         if (result.receipt.status)
           return resolve({status: true});
       }).catch(function(error) {
-        alert("Transaction reverted");
+        Swal.fire({
+          icon: 'error',
+          title: 'Transaction reverted!',
+          text: 'Account already registered',
+          footer: '<a href="">Why do I have this issue?</a>'
+        })
         console.log(error);
         return reject('transfer.service error');
       });
@@ -141,7 +162,12 @@ export class BallotService {
       }).then(function(result) {
           return resolve(result);
       }).catch(function(error) {
-        alert("Transaction reverted");
+        Swal.fire({
+          icon: 'error',
+          title: 'Transaction reverted!',
+          text: 'Cannot get vote result, please try later',
+          footer: '<a href="">Why do I have this issue?</a>'
+        })
         console.log(error);
         return reject('transfer.service error');
       });
@@ -164,7 +190,12 @@ export class BallotService {
           if (result.receipt.status)
             return resolve({status: true});
       }).catch(function(error) {
-        alert("Transaction reverted");
+        Swal.fire({
+          icon: 'error',
+          title: 'Transaction reverted!',
+          text: 'Requirements not satisfied to vote',
+          footer: '<a href="">Why do I have this issue?</a>'
+        })
         console.log(error);
         return reject('transfer.service error');
       });
